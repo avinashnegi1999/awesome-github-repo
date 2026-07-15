@@ -37,6 +37,32 @@ TOPICS = {
                            "docker in:name", ["moby/moby", "docker/compose", "docker/awesome-compose", "docker/cli"]),
     "kubernetes":         ("Kubernetes", "K8s core, operators, GitOps & cluster tooling.",
                            "kubernetes in:name", ["kubernetes/kubernetes", "helm/helm", "k3s-io/k3s", "argoproj/argo-cd"]),
+    # --- infra / backend ---
+    "terraform-iac":      ("Terraform & IaC", "Infrastructure as code: Terraform, Pulumi, Ansible.",
+                           "terraform in:name", ["hashicorp/terraform", "pulumi/pulumi", "ansible/ansible", "gruntwork-io/terragrunt", "aquasecurity/tfsec"]),
+    "web-servers":        ("Web Servers (Nginx / Caddy)", "Nginx, Caddy, OpenResty & HTTP servers.",
+                           "nginx in:name", ["nginx/nginx", "caddyserver/caddy", "openresty/openresty", "apache/httpd"]),
+    "elk-logging":        ("Logging (ELK / Loki)", "Elasticsearch, Logstash, Kibana, Loki, Fluentd, Vector.",
+                           "logging in:name", ["elastic/elasticsearch", "elastic/logstash", "elastic/kibana", "grafana/loki", "vectordotdev/vector", "fluent/fluentd"]),
+    "grpc-api":           ("gRPC & APIs", "gRPC, Protobuf, gateways & API tooling.",
+                           "grpc in:name", ["grpc/grpc", "protocolbuffers/protobuf", "grpc-ecosystem/grpc-gateway", "fullstorydev/grpcurl", "connectrpc/connect-go"]),
+    "sqlalchemy-orm":     ("Python ORMs", "SQLAlchemy, Alembic, Tortoise & DB layers.",
+                           "orm in:name language:python", ["sqlalchemy/sqlalchemy", "sqlalchemy/alembic", "tortoise/tortoise-orm", "encode/databases", "fastapi/sqlmodel"]),
+    "pytest-testing":     ("Python Testing", "pytest, tox, hypothesis & test tooling.",
+                           "pytest in:name", ["pytest-dev/pytest", "tox-dev/tox", "HypothesisWorks/hypothesis", "spulec/freezegun", "nedbat/coveragepy"]),
+    "async-python":       ("Async Python", "asyncio, aiohttp, httpx, uvloop, trio.",
+                           "asyncio in:name", ["aio-libs/aiohttp", "encode/httpx", "MagicStack/uvloop", "python-trio/trio", "aio-libs/aiokafka"]),
+    "data-pipelines":     ("Data Pipelines", "Airflow, Dagster, Prefect, dbt, Beam.",
+                           "data engineering in:name,description", ["apache/airflow", "dagster-io/dagster", "PrefectHQ/prefect", "dbt-labs/dbt-core", "apache/beam"]),
+    # --- career / learning ---
+    "dsa-leetcode":       ("DSA & LeetCode", "Algorithms, data structures & interview coding prep.",
+                           "leetcode in:name", ["TheAlgorithms/Python", "trekhleb/javascript-algorithms", "kdn251/interviews", "azl397985856/leetcode"]),
+    "system-design":      ("System Design", "System design primers, patterns & scalability.",
+                           "system design in:name,description", ["donnemartin/system-design-primer", "ByteByteGoHq/system-design-101", "karanpratapsingh/system-design", "ashishps1/awesome-system-design-resources"]),
+    "cs-fundamentals":    ("CS Fundamentals", "Free CS courses: OS, networks, DB, theory.",
+                           "computer science in:name,description", ["ossu/computer-science", "jwasham/coding-interview-university", "EbookFoundation/free-programming-books", "Developer-Y/cs-video-courses"]),
+    "roadmaps":           ("Developer Roadmaps", "Learning paths & skill roadmaps.",
+                           "roadmap in:name", ["kamranahmedse/developer-roadmap", "ossu/computer-science", "practical-tutorials/project-based-learning"]),
 }
 
 def gh_search(query):

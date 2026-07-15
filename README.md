@@ -1,6 +1,6 @@
 # Awesome GitHub Repos
 
-Curated lists of **521 repos** across **14 topics**, aligned to a Python / FastAPI / infra stack.
+Curated lists of **981 repos** across **26 topics**, aligned to a Python / FastAPI / infra stack.
 Star counts fetched live from GitHub on **2026-07-15**. Re-run `build_awesome.py` to refresh.
 
 | Topic | Repos | Top repo | ⭐ |
@@ -19,5 +19,17 @@ Star counts fetched live from GitHub on **2026-07-15**. Re-run `build_awesome.py
 | [Message Brokers (Kafka / RabbitMQ)](message-brokers/README.md) | 39 | [apache/kafka](https://github.com/apache/kafka) | 33.2k |
 | [Docker & Containers](docker/README.md) | 37 | [moby/moby](https://github.com/moby/moby) | 71.9k |
 | [Kubernetes](kubernetes/README.md) | 38 | [kubernetes/kubernetes](https://github.com/kubernetes/kubernetes) | 123.8k |
+| [Terraform & IaC](terraform-iac/README.md) | 39 | [ansible/ansible](https://github.com/ansible/ansible) | 69.7k |
+| [Web Servers (Nginx / Caddy)](web-servers/README.md) | 38 | [caddyserver/caddy](https://github.com/caddyserver/caddy) | 74k |
+| [Logging (ELK / Loki)](elk-logging/README.md) | 41 | [elastic/elasticsearch](https://github.com/elastic/elasticsearch) | 77.6k |
+| [gRPC & APIs](grpc-api/README.md) | 37 | [protocolbuffers/protobuf](https://github.com/protocolbuffers/protobuf) | 71.5k |
+| [Python ORMs](sqlalchemy-orm/README.md) | 39 | [fastapi/sqlmodel](https://github.com/fastapi/sqlmodel) | 18.2k |
+| [Python Testing](pytest-testing/README.md) | 39 | [pytest-dev/pytest](https://github.com/pytest-dev/pytest) | 14.3k |
+| [Async Python](async-python/README.md) | 40 | [aio-libs/aiohttp](https://github.com/aio-libs/aiohttp) | 16.5k |
+| [Data Pipelines](data-pipelines/README.md) | 40 | [apache/airflow](https://github.com/apache/airflow) | 46.1k |
+| [DSA & LeetCode](dsa-leetcode/README.md) | 38 | [TheAlgorithms/Python](https://github.com/TheAlgorithms/Python) | 222.7k |
+| [System Design](system-design/README.md) | 35 | [donnemartin/system-design-primer](https://github.com/donnemartin/system-design-primer) | 357.6k |
+| [CS Fundamentals](cs-fundamentals/README.md) | 36 | [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | 451.9k |
+| [Developer Roadmaps](roadmaps/README.md) | 38 | [nilbuild/developer-roadmap](https://github.com/nilbuild/developer-roadmap) | 361k |
 
-**Total: 521 repos.**
+**Total: 981 repos.**

@@ -24,7 +24,7 @@
 | 16 | [TangSY/edge-next-starter](https://github.com/TangSY/edge-next-starter) | 472 | TypeScript | An out‑of‑the‑box Next.js + Cloudflare full‑stack starter integrating Edge Runtime, D1 database, R2 storage... |
 | 17 | [clearml/clearml-server](https://github.com/clearml/clearml-server) | 465 | Python | ClearML - Auto-Magical CI/CD to streamline your AI workload. Experiment Management, Data Management, Pipeli... |
 | 18 | [imposter-project/imposter](https://github.com/imposter-project/imposter) | 411 | Shell | Scriptable, multipurpose mock server. Run standalone mock servers, or embed mocks within your tests or CI/C... |
-| 19 | [catchpoint/workflow-telemetry-action](https://github.com/catchpoint/workflow-telemetry-action) | 408 | TypeScript | Github action to collect metrics (CPU, memory, I/O, etc ...) from your workflows to help you debug and opti... |
+| 19 | [catchpoint/workflow-telemetry-action](https://github.com/catchpoint/workflow-telemetry-action) | 409 | TypeScript | Github action to collect metrics (CPU, memory, I/O, etc ...) from your workflows to help you debug and opti... |
 | 20 | [alysonhower/tauri2-svelte5-shadcn](https://github.com/alysonhower/tauri2-svelte5-shadcn) | 375 | TypeScript | A clean desktop application template that combines Tauri 2 with Svelte 5 + Shadcn-svelte, including automat... |
 | 21 | [microsoft/github-actions-for-desktop-apps](https://github.com/microsoft/github-actions-for-desktop-apps) | 368 | C# | This repo contains a sample WPF application to demonstrate how to create CI/CD pipelines using GitHub Actions. |
 | 22 | [boostsecurityio/smokedmeat](https://github.com/boostsecurityio/smokedmeat) | 368 | Go | A CI/CD Red Team Framework for demonstrating Build Pipeline security risks. |

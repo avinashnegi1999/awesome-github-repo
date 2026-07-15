@@ -65,6 +65,18 @@ TOPICS = {
                            "roadmap in:name", ["kamranahmedse/developer-roadmap", "ossu/computer-science", "practical-tutorials/project-based-learning"]),
 }
 
+# group_key -> (Group Title, [topic keys in order])
+GROUPS = {
+    "01-dsa-interview":  ("DSA & Interview Prep (NIMCET / LeetCode)", ["dsa-leetcode", "system-design", "cs-fundamentals", "roadmaps"]),
+    "02-backend":        ("Backend (Python / FastAPI)", ["fastapi", "sqlalchemy-orm", "async-python", "celery-redis", "grpc-api", "pytest-testing"]),
+    "03-databases":      ("Databases & Messaging", ["postgresql", "redis", "message-brokers", "data-pipelines"]),
+    "04-infra-devops":   ("Infra & DevOps", ["docker", "kubernetes", "terraform-iac", "web-servers", "load-balancing-cdn", "ci-cd"]),
+    "05-observability":  ("Observability & Logging", ["observability", "elk-logging"]),
+    "06-python":         ("Python Ecosystem", ["python-projects", "python-tools"]),
+    "07-open-source":    ("Open Source & Tooling", ["claude-code", "contribution"]),
+}
+GROUP_OF = {k: g for g, (_, keys) in GROUPS.items() for k in keys}
+
 def gh_search(query):
     cmd = ["gh", "api", "-X", "GET", "search/repositories",
            "-f", f"q={query}", "-f", "sort=stars", "-f", "order=desc", "-f", f"per_page={PER}"]
@@ -102,7 +114,7 @@ for key, (title, blurb, query, extras) in TOPICS.items():
         if r: seen.add(full.lower()); rows.append(row(r))
     rows.sort(key=lambda x: x[2], reverse=True)
 
-    folder = os.path.join(ROOT, key)
+    folder = os.path.join(ROOT, GROUP_OF[key], key)
     os.makedirs(folder, exist_ok=True)
     lines = [f"# Awesome {title}", "", f"> {blurb}", "",
              f"*Star counts fetched live from GitHub on {DATE}. {len(rows)} repos, sorted by stars.*", "",
@@ -117,16 +129,28 @@ for key, (title, blurb, query, extras) in TOPICS.items():
     summary.append((key, title, len(rows), top, rows[0][2] if rows else 0))
     print(f"[{key}] {len(rows)} repos, top: {top}")
 
-# top-level README (nav)
-total = sum(x[2] for x in summary)
+# top-level README (nav), grouped by category
+by_key = {key: (title, n, top, s) for key, title, n, top, s in summary}
+total = sum(x[1] for x in by_key.values())
 idx = ["# Awesome GitHub Repos", "",
-       f"Curated lists of **{total} repos** across **{len(TOPICS)} topics**, aligned to a Python / FastAPI / infra stack.",
-       f"Star counts fetched live from GitHub on **{DATE}**. Re-run `build_awesome.py` to refresh.", "",
-       "| Topic | Repos | Top repo | ⭐ |",
-       "|-------|------:|----------|---:|"]
-for key, title, n, top, s in summary:
-    idx.append(f"| [{title}]({key}/README.md) | {n} | [{top}](https://github.com/{top}) | {star(s)} |")
-idx += ["", f"**Total: {total} repos.**", ""]
+       f"Curated lists of **{total} repos** across **{len(TOPICS)} topics** in **{len(GROUPS)} categories**, "
+       "aligned to a Python / FastAPI / infra stack and NIMCET / interview prep.",
+       f"Star counts fetched live from GitHub on **{DATE}**. Re-run `build_awesome.py` to refresh.", ""]
+# category overview
+idx += ["## Categories", "", "| Category | Topics | Repos |", "|----------|-------:|------:|"]
+for g, (gtitle, keys) in GROUPS.items():
+    n = sum(by_key[k][1] for k in keys if k in by_key)
+    idx.append(f"| [{gtitle}](#{g}) | {len([k for k in keys if k in by_key])} | {n} |")
+idx.append("")
+# per-category tables
+for g, (gtitle, keys) in GROUPS.items():
+    idx += [f"## {g}", "", f"### {gtitle}", "", "| Topic | Repos | Top repo | ⭐ |", "|-------|------:|----------|---:|"]
+    for k in keys:
+        if k not in by_key: continue
+        title, n, top, s = by_key[k]
+        idx.append(f"| [{title}]({g}/{k}/README.md) | {n} | [{top}](https://github.com/{top}) | {star(s)} |")
+    idx.append("")
+idx += [f"**Total: {total} repos.**", ""]
 with open(os.path.join(ROOT, "README.md"), "w") as f:
     f.write("\n".join(idx))
 print(f"\nTotal repos: {sum(x[2] for x in summary)} across {len(summary)} topics. Index written.")

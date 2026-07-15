@@ -14,7 +14,7 @@
 | 6 | [PrefectHQ/prefect](https://github.com/PrefectHQ/prefect) | 23.4k | Python | Prefect is a workflow orchestration framework for building resilient data pipelines in Python. |
 | 7 | [dagster-io/dagster](https://github.com/dagster-io/dagster) | 15.8k | Python | An orchestration platform for the development, production, and observation of data assets. |
 | 8 | [andkret/Cookbook](https://github.com/andkret/Cookbook) | 15.2k | Python | The Data Engineering Cookbook |
-| 9 | [dbt-labs/dbt-core](https://github.com/dbt-labs/dbt-core) | 13.4k | Rust | dbt enables data analysts and engineers to transform their data using the same practices that software engi... |
+| 9 | [dbt-labs/dbt-core](https://github.com/dbt-labs/dbt-core) | 13.5k | Rust | dbt enables data analysts and engineers to transform their data using the same practices that software engi... |
 | 10 | [kedro-org/kedro](https://github.com/kedro-org/kedro) | 10.9k | Python | Kedro is a toolbox for production-ready data science. It uses software engineering best practices to help y... |
 | 11 | [igorbarinov/awesome-data-engineering](https://github.com/igorbarinov/awesome-data-engineering) | 8.9k | - | A curated list of data engineering tools for software developers |
 | 12 | [apache/beam](https://github.com/apache/beam) | 8.6k | Java | Apache Beam is a unified programming model for Batch and Streaming data processing. |

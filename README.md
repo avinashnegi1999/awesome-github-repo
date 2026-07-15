@@ -1,7 +1,7 @@
 # Awesome GitHub Repos
 
-Curated lists across 14 topics, aligned to Python / FastAPI / infra stack.
-Star counts fetched live on 2026-07-15.
+Curated lists of **521 repos** across **14 topics**, aligned to a Python / FastAPI / infra stack.
+Star counts fetched live from GitHub on **2026-07-15**. Re-run `build_awesome.py` to refresh.
 
 | Topic | Repos | Top repo | ⭐ |
 |-------|------:|----------|---:|
@@ -19,3 +19,5 @@ Star counts fetched live on 2026-07-15.
 | [Message Brokers (Kafka / RabbitMQ)](message-brokers/README.md) | 39 | [apache/kafka](https://github.com/apache/kafka) | 33.2k |
 | [Docker & Containers](docker/README.md) | 37 | [moby/moby](https://github.com/moby/moby) | 71.9k |
 | [Kubernetes](kubernetes/README.md) | 38 | [kubernetes/kubernetes](https://github.com/kubernetes/kubernetes) | 123.8k |
+
+**Total: 521 repos.**

@@ -1,13 +1,13 @@
 # Awesome GitHub Repos
 
-Curated lists of **981 repos** across **26 topics** in **7 categories**, aligned to a Python / FastAPI / infra stack and NIMCET / interview prep.
+Curated lists of **981 repos** across **26 topics** in **7 categories**, aligned to a Python / FastAPI / infra stack and interview prep.
 Star counts fetched live from GitHub on **2026-07-15**. Re-run `build_awesome.py` to refresh.
 
 ## Categories
 
 | Category | Topics | Repos |
 |----------|-------:|------:|
-| [DSA & Interview Prep (NIMCET / LeetCode)](#01-dsa-interview) | 4 | 147 |
+| [DSA & Interview Prep (LeetCode)](#01-dsa-interview) | 4 | 147 |
 | [Backend (Python / FastAPI)](#02-backend) | 6 | 229 |
 | [Databases & Messaging](#03-databases) | 4 | 154 |
 | [Infra & DevOps](#04-infra-devops) | 6 | 228 |
@@ -17,7 +17,7 @@ Star counts fetched live from GitHub on **2026-07-15**. Re-run `build_awesome.py
 
 ## 01-dsa-interview
 
-### DSA & Interview Prep (NIMCET / LeetCode)
+### DSA & Interview Prep (LeetCode)
 
 | Topic | Repos | Top repo | ⭐ |
 |-------|------:|----------|---:|

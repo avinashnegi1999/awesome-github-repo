@@ -67,7 +67,7 @@ TOPICS = {
 
 # group_key -> (Group Title, [topic keys in order])
 GROUPS = {
-    "01-dsa-interview":  ("DSA & Interview Prep (NIMCET / LeetCode)", ["dsa-leetcode", "system-design", "cs-fundamentals", "roadmaps"]),
+    "01-dsa-interview":  ("DSA & Interview Prep (LeetCode)", ["dsa-leetcode", "system-design", "cs-fundamentals", "roadmaps"]),
     "02-backend":        ("Backend (Python / FastAPI)", ["fastapi", "sqlalchemy-orm", "async-python", "celery-redis", "grpc-api", "pytest-testing"]),
     "03-databases":      ("Databases & Messaging", ["postgresql", "redis", "message-brokers", "data-pipelines"]),
     "04-infra-devops":   ("Infra & DevOps", ["docker", "kubernetes", "terraform-iac", "web-servers", "load-balancing-cdn", "ci-cd"]),
@@ -134,7 +134,7 @@ by_key = {key: (title, n, top, s) for key, title, n, top, s in summary}
 total = sum(x[1] for x in by_key.values())
 idx = ["# Awesome GitHub Repos", "",
        f"Curated lists of **{total} repos** across **{len(TOPICS)} topics** in **{len(GROUPS)} categories**, "
-       "aligned to a Python / FastAPI / infra stack and NIMCET / interview prep.",
+       "aligned to a Python / FastAPI / infra stack and interview prep.",
        f"Star counts fetched live from GitHub on **{DATE}**. Re-run `build_awesome.py` to refresh.", ""]
 # category overview
 idx += ["## Categories", "", "| Category | Topics | Repos |", "|----------|-------:|------:|"]

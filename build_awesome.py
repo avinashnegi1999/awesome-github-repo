@@ -151,6 +151,9 @@ for g, (gtitle, keys) in GROUPS.items():
         idx.append(f"| [{title}]({g}/{k}/README.md) | {n} | [{top}](https://github.com/{top}) | {star(s)} |")
     idx.append("")
 idx += [f"**Total: {total} repos.**", ""]
+# extra hand-curated lists (not repo-scraped)
+idx += ["## Extras", "",
+        "- [Boot.dev — Backend Path course tracker](boot.dev/README.md)", ""]
 with open(os.path.join(ROOT, "README.md"), "w") as f:
     f.write("\n".join(idx))
 print(f"\nTotal repos: {sum(x[2] for x in summary)} across {len(summary)} topics. Index written.")
